@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/image"
+    android:layout_width="130dp"
+    android:layout_height="150dp"
+    android:padding="5dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:src="@color/teal_200"
+    />
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="135dp"
+        tools:text="iPhone 11 128GB "
+        />
+
+    <TextView
+        android:id="@+id/text_merchant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@id/text_name"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="135dp"
+        tools:text="Very good shop"
+        />
+
+    <TextView
+        android:id="@+id/text_name_attributes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@id/text_merchant"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        tools:text="@string/ram"
+        />
+    <TextView
+        android:id="@+id/text_value_attributes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/text_name_attributes"
+        app:layout_constraintTop_toBottomOf="@id/text_merchant"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        tools:text="128Gb"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
